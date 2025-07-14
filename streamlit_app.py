@@ -457,14 +457,55 @@ def main():
         
         # Primary constitution summary
         st.markdown(f"""
-        <div class="advice-section">
-            <h3>Your Primary Constitution</h3>
-            <h4>{dosha_names[primary_dosha]}</h4>
-            <p>You are primarily a {primary_dosha.title()} type with {secondary_dosha.title()} as your secondary influence.</p>
+        <div style="
+            background: linear-gradient(135deg, #232526 0%, #414345 100%);
+            color: #fff;
+            padding: 2rem 1.5rem 1.5rem 1.5rem;
+            border-radius: 18px;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+            border: 2px solid #6C63FF;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        ">
+            <div style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.7rem; color: #fff;">Your Primary Constitution</div>
+            <div style="font-size: 1.2rem; font-weight: 700; color: #6C63FF; margin-bottom: 0.5rem;">{dosha_names[primary_dosha]}</div>
+            <div style="font-size: 1.05rem; color: #e0e0e0;">You are primarily a <b>{primary_dosha.title()}</b> type with <b>{secondary_dosha.title()}</b> as your secondary influence.</div>
         </div>
         """, unsafe_allow_html=True)
-        
+
         # Action buttons
+        st.markdown("""
+        <div style="display: flex; gap: 1.5rem; justify-content: center; margin-top: 2.5rem; margin-bottom: 1.5rem;">
+            <style>
+            .ayur-btn {
+                background: linear-gradient(90deg, #6C63FF 0%, #FF9800 100%);
+                color: #fff !important;
+                border: none;
+                border-radius: 30px;
+                padding: 0.9rem 2.2rem;
+                font-size: 1.1rem;
+                font-weight: 600;
+                cursor: pointer;
+                margin: 0 0.2rem;
+                box-shadow: 0 2px 8px rgba(108,99,255,0.10);
+                transition: background 0.2s, transform 0.2s;
+            }
+            .ayur-btn:hover {
+                background: linear-gradient(90deg, #FF9800 0%, #6C63FF 100%);
+                transform: translateY(-2px);
+            }
+            </style>
+            <form action="" method="post">
+                <button class="ayur-btn" type="submit" name="take_again">Take Assessment Again</button>
+                <button class="ayur-btn" type="submit" name="get_advice">Get Personalized Advice</button>
+                <button class="ayur-btn" type="submit" name="chat_expert">Chat with AI Expert</button>
+            </form>
+        </div>
+        """, unsafe_allow_html=True)
+
+        # Button logic (keep Streamlit's actual buttons for functionality)
         col1, col2, col3 = st.columns([1, 1, 1])
         with col1:
             if st.button("Take Assessment Again"):
@@ -475,12 +516,10 @@ def main():
                 st.session_state.show_chat = False
                 st.session_state.chat_messages = []
                 st.rerun()
-        
         with col2:
             if st.button("Get Personalized Advice"):
                 st.session_state.show_advice = True
                 st.rerun()
-        
         with col3:
             if st.button("Chat with AI Expert"):
                 st.session_state.show_chat = True
