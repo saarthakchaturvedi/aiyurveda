@@ -475,40 +475,31 @@ def main():
         </div>
         """, unsafe_allow_html=True)
 
-        # Action buttons
+        # Action buttons (styled, but only use st.button for actions)
         st.markdown("""
-        <div style="display: flex; gap: 1.5rem; justify-content: center; margin-top: 2.5rem; margin-bottom: 1.5rem;">
-            <style>
-            .ayur-btn {
-                background: linear-gradient(90deg, #6C63FF 0%, #FF9800 100%);
-                color: #fff !important;
-                border: none;
-                border-radius: 30px;
-                padding: 0.9rem 2.2rem;
-                font-size: 1.1rem;
-                font-weight: 600;
-                cursor: pointer;
-                margin: 0 0.2rem;
-                box-shadow: 0 2px 8px rgba(108,99,255,0.10);
-                transition: background 0.2s, transform 0.2s;
-            }
-            .ayur-btn:hover {
-                background: linear-gradient(90deg, #FF9800 0%, #6C63FF 100%);
-                transform: translateY(-2px);
-            }
-            </style>
-            <form action="" method="post">
-                <button class="ayur-btn" type="submit" name="take_again">Take Assessment Again</button>
-                <button class="ayur-btn" type="submit" name="get_advice">Get Personalized Advice</button>
-                <button class="ayur-btn" type="submit" name="chat_expert">Chat with AI Expert</button>
-            </form>
-        </div>
+        <style>
+        .ayur-btn {
+            background: linear-gradient(90deg, #6C63FF 0%, #FF9800 100%);
+            color: #fff !important;
+            border: none;
+            border-radius: 30px;
+            padding: 0.9rem 2.2rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            margin: 0 0.2rem;
+            box-shadow: 0 2px 8px rgba(108,99,255,0.10);
+            transition: background 0.2s, transform 0.2s;
+        }
+        .ayur-btn:hover {
+            background: linear-gradient(90deg, #FF9800 0%, #6C63FF 100%);
+            transform: translateY(-2px);
+        }
+        </style>
         """, unsafe_allow_html=True)
-
-        # Button logic (keep Streamlit's actual buttons for functionality)
         col1, col2, col3 = st.columns([1, 1, 1])
         with col1:
-            if st.button("Take Assessment Again"):
+            if st.button("Take Assessment Again", key="take_again_btn"):
                 st.session_state.current_question = 0
                 st.session_state.answers = []
                 st.session_state.assessment_complete = False
@@ -517,11 +508,11 @@ def main():
                 st.session_state.chat_messages = []
                 st.rerun()
         with col2:
-            if st.button("Get Personalized Advice"):
+            if st.button("Get Personalized Advice", key="get_advice_btn"):
                 st.session_state.show_advice = True
                 st.rerun()
         with col3:
-            if st.button("Chat with AI Expert"):
+            if st.button("Chat with AI Expert", key="chat_expert_btn"):
                 st.session_state.show_chat = True
                 st.rerun()
     
