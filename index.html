@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayurveda Dosha Assessment</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Welcome Screen -->
+        <div id="welcome-screen" class="screen active">
+            <div class="welcome-content">
+                <div class="logo">
+                    <span class="leaf">🌿</span>
+                    <h1>Ayurveda Dosha Assessment</h1>
+                    <span class="leaf">🌿</span>
+                </div>
+                <p class="subtitle">Discover your unique body constitution and receive personalized Ayurvedic guidance</p>
+                <button id="start-btn" class="btn-primary">Begin Assessment</button>
+            </div>
+        </div>
+
+        <!-- Assessment Screen -->
+        <div id="assessment-screen" class="screen">
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div id="progress-fill" class="progress-fill"></div>
+                </div>
+                <span id="progress-text">Question 1 of 20</span>
+            </div>
+
+            <div class="question-container">
+                <h2 id="question-text">What best describes your body frame?</h2>
+                <div id="options-container" class="options-container">
+                    <!-- Options will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button id="prev-btn" class="btn-secondary" disabled>Previous</button>
+                <button id="next-btn" class="btn-primary">Next</button>
+            </div>
+        </div>
+
+        <!-- Results Screen -->
+        <div id="results-screen" class="screen">
+            <div class="results-header">
+                <h1>Your Dosha Constitution</h1>
+                <p>Based on your responses, here's your unique body constitution breakdown:</p>
+            </div>
+
+            <div class="dosha-results">
+                <div class="dosha-card" id="vata-card">
+                    <div class="dosha-header">
+                        <h3>Vata (Air + Ether)</h3>
+                        <div class="dosha-percentage">
+                            <span id="vata-percentage">0%</span>
+                        </div>
+                    </div>
+                    <div class="dosha-bar">
+                        <div id="vata-bar" class="bar-fill"></div>
+                    </div>
+                    <p class="dosha-description">Creative, quick-thinking, adaptable</p>
+                </div>
+
+                <div class="dosha-card" id="pitta-card">
+                    <div class="dosha-header">
+                        <h3>Pitta (Fire + Water)</h3>
+                        <div class="dosha-percentage">
+                            <span id="pitta-percentage">0%</span>
+                        </div>
+                    </div>
+                    <div class="dosha-bar">
+                        <div id="pitta-bar" class="bar-fill"></div>
+                    </div>
+                    <p class="dosha-description">Intelligent, focused, driven</p>
+                </div>
+
+                <div class="dosha-card" id="kapha-card">
+                    <div class="dosha-header">
+                        <h3>Kapha (Earth + Water)</h3>
+                        <div class="dosha-percentage">
+                            <span id="kapha-percentage">0%</span>
+                        </div>
+                    </div>
+                    <div class="dosha-bar">
+                        <div id="kapha-bar" class="bar-fill"></div>
+                    </div>
+                    <p class="dosha-description">Strong, loyal, patient</p>
+                </div>
+            </div>
+
+            <div class="constitution-summary">
+                <h3>Your Primary Constitution</h3>
+                <div id="primary-constitution" class="primary-constitution">
+                    <!-- Will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <button id="restart-btn" class="btn-secondary">Take Assessment Again</button>
+                <button id="get-advice-btn" class="btn-primary">Get Personalized Advice</button>
+            </div>
+        </div>
+
+        <!-- Advice Screen -->
+        <div id="advice-screen" class="screen">
+            <div class="advice-header">
+                <h1>Your Personalized Ayurvedic Advice</h1>
+                <button id="back-to-results" class="btn-secondary">← Back to Results</button>
+            </div>
+            <div id="advice-content" class="advice-content">
+                <!-- Will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

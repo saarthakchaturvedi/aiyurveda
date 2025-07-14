@@ -1,0 +1,99 @@
+<Question 1>What best describes your body frame?</Question 1>
+<Option 1>Thin, light (Vata)</Option 1>
+<Option 2>Medium, muscular (Pitta)</Option 2>
+<Option 3>Broad, heavy (Kapha)</Option 3>
+
+<Question 2>How would you describe your skin type?</Question 2>
+<Option 1>Dry, rough (Vata)</Option 1>
+<Option 2>Warm, oily, reddish (Pitta)</Option 2>
+<Option 3>Soft, moist, pale (Kapha)</Option 3>
+
+<Question 3>What is your typical appetite like?</Question 3>
+<Option 1>Variable, irregular (Vata)</Option 1>
+<Option 2>Strong, sharp, intense hunger (Pitta)</Option 2>
+<Option 3>Slow, steady, mild hunger (Kapha)</Option 3>
+
+<Question 4>How do you usually sleep?</Question 4>
+<Option 1>Light, interrupted, little sleep needed (Vata)</Option 1>
+<Option 2>Moderate, sound (Pitta)</Option 2>
+<Option 3>Deep, prolonged, hard to wake (Kapha)</Option 3>
+
+<Question 5>How would you describe your hair?</Question 5>
+<Option 1>Dry, brittle, thin (Vata)</Option 1>
+<Option 2>Soft, fine, prone to early graying or thinning (Pitta)</Option 2>
+<Option 3>Thick, oily, wavy (Kapha)</Option 3>
+
+<Question 6>What is your usual body temperature?</Question 6>
+<Option 1>Cold, prefers warmth (Vata)</Option 1>
+<Option 2>Warm, often feels hot (Pitta)</Option 2>
+<Option 3>Cool, tolerates cold well (Kapha)</Option 3>
+
+<Question 7>How is your digestion?</Question 7>
+<Option 1>Irregular, prone to gas or bloating (Vata)</Option 1>
+<Option 2>Strong, can digest almost anything (Pitta)</Option 2>
+<Option 3>Slow, heavy, feels full easily (Kapha)</Option 3>
+
+<Question 8>How is your memory and learning style?</Question 8>
+<Option 1>Quick to learn, quick to forget (Vata)</Option 1>
+<Option 2>Sharp, focused, good recall (Pitta)</Option 2>
+<Option 3>Slow to learn, but excellent long-term memory (Kapha)</Option 3>
+
+<Question 9>What is your typical energy level?</Question 9>
+<Option 1>Variable, bursts of energy (Vata)</Option 1>
+<Option 2>Consistent, strong (Pitta)</Option 2>
+<Option 3>Steady, slow, can be sluggish (Kapha)</Option 3>
+
+<Question 10>How do you handle stress?</Question 10>
+<Option 1>Nervous, anxious, worries (Vata)</Option 1>
+<Option 2>Irritable, impatient, easily frustrated (Pitta)</Option 2>
+<Option 3>Calm, withdrawn, rarely upset (Kapha)</Option 3>
+
+<Question 11>How would you describe your perspiration?</Question 11>
+<Option 1>Minimal, little sweating (Vata)</Option 1>
+<Option 2>Profuse, strong odor (Pitta)</Option 2>
+<Option 3>Moderate, little odor (Kapha)</Option 3>
+
+<Question 12>What is your preferred climate?</Question 12>
+<Option 1>Warm and moist (Vata)</Option 1>
+<Option 2>Cool and dry (Pitta)</Option 2>
+<Option 3>Warm and dry (Kapha)</Option 3>
+
+<Question 13>How is your speech?</Question 13>
+<Option 1>Fast, talkative, changeable (Vata)</Option 1>
+<Option 2>Clear, sharp, convincing (Pitta)</Option 2>
+<Option 3>Slow, calm, measured (Kapha)</Option 3>
+
+<Question 14>How do you react to fasting?</Question 14>
+<Option 1>Becomes weak, anxious quickly (Vata)</Option 1>
+<Option 2>Irritable, angry, can’t skip meals (Pitta)</Option 2>
+<Option 3>Can tolerate fasting, little discomfort (Kapha)</Option 3>
+
+<Question 15>How is your elimination (bowel movements)?</Question 15>
+<Option 1>Dry, hard, irregular (Vata)</Option 1>
+<Option 2>Loose, frequent, soft (Pitta)</Option 2>
+<Option 3>Slow, well-formed, regular (Kapha)</Option 3>
+
+<Question 16>How would you describe your joints?</Question 16>
+<Option 1>Crack easily, prominent, dry (Vata)</Option 1>
+<Option 2>Flexible, warm (Pitta)</Option 2>
+<Option 3>Large, well-lubricated, stable (Kapha)</Option 3>
+
+<Question 17>How do you approach work and tasks?</Question 17>
+<Option 1>Quick, creative, easily distracted (Vata)</Option 1>
+<Option 2>Organized, goal-oriented, competitive (Pitta)</Option 2>
+<Option 3>Steady, patient, persistent (Kapha)</Option 3>
+
+<Question 18>How is your emotional nature?</Question 18>
+<Option 1>Anxious, fearful, changeable moods (Vata)</Option 1>
+<Option 2>Assertive, intense, passionate (Pitta)</Option 2>
+<Option 3>Calm, forgiving, content (Kapha)</Option 3>
+
+<Question 19>How do you respond to new experiences?</Question 19>
+<Option 1>Loves change, adapts quickly (Vata)</Option 1>
+<Option 2>Enjoys challenge, seeks achievement (Pitta)</Option 2>
+<Option 3>Prefers routine, resists change (Kapha)</Option 3>
+
+<Question 20>How would your friends describe you?</Question 20>
+<Option 1>Energetic, imaginative, lively (Vata)</Option 1>
+<Option 2>Confident, determined, outspoken (Pitta)</Option 2>
+<Option 3>Dependable, nurturing, easygoing (Kapha)</Option 3>
